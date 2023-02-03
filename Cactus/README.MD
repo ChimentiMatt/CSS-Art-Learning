@@ -1,7 +1,7 @@
 ### Credit to Mina on Code Pen https://codepen.io/codeanddream/pen/MWjeVgB?editors=0110
 
 ## New Techniques
-- use transparent on borders to hide part of the box making obejects like triangles.
+- Use transparent on borders to hide part of the box making obejects like triangles.
 
 ````
 ```
