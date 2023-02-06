@@ -1,0 +1,158 @@
+:root {
+	--kirby-body-arms-light: #ffc0cb;
+	--kirby-body-arms-main: pink;
+	--kirby-body-arms-dark: #ff8095;
+	--kirby-cheeks: HotPink; 
+	--kirby-feet-light: #ffc0cb;
+	--kirby-feet-main: Red;
+	--kirby-feet-dark: DarkRed; 
+}
+
+.kirby-body {
+	width: 300px;
+	height: 300px;
+	background: radial-gradient(circle at 30% 30%,
+	  var(--kirby-body-arms-light), var(--kirby-body-arms-main), var(--kirby-body-arms-main), var(--kirby-body-arms-dark), var(--kirby-body-arms-dark));
+	border-radius: 50%;
+	border: 2px solid black;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -150px;
+}
+
+.eye {
+	border-radius: 50%;
+	border: 3px solid black;
+	position: absolute;
+	width: 36px;
+	height: 85px;
+}
+
+.left-eye {
+	background: linear-gradient(black 55%, blue 90%, cyan);
+	left: 88px;
+	top: 50px;
+}
+  
+.right-eye {
+	background: linear-gradient(black 55%, blue 90%, cyan);
+	right: 88px;
+	top: 50px;
+}
+
+.pupil {
+	background-color: white;
+	border-radius: 50%;
+	position: absolute;
+	box-shadow: inset 0 0 3px 2px black;
+	width: 29px;
+	height: 45px;
+}
+
+.left-pupil {
+	left: 94px;
+	top: 55px;
+}
+  
+.right-pupil {
+	right: 94px;
+	top: 55px;
+}
+
+.eyebrow {
+	background-color: var(--kirby-body-arms-main);
+	position: absolute;
+	height: 30px;
+	width: 50px;
+}
+
+.left-eyebrow {
+	left: 93px;
+	top: 15px;
+}
+  
+.right-eyebrow {
+	right: 93px;
+	top: 15px;
+}
+
+
+.cheek {
+	background-color: var(--kirby-cheeks);
+	border-radius: 50%;
+	position: absolute;
+	opacity: .8;
+	box-shadow: inset 0px 0px 2px 2px var(--kirby-body-arms-main);
+	width: 50px;
+	height: 30px;
+	z-index: 1;
+}
+  
+.left-cheek {
+	top: 130px;
+	left: 40px;
+}
+  
+.right-cheek {
+	top: 130px;
+	right: 40px;
+}
+  
+.mouth {
+	border-radius: 50%;
+	background: black;
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	left: 145px;
+	top: 155px;
+}
+
+.arm {
+	border-radius: 50%;
+	border: 2px solid black;
+	position: relative;
+	width: 130px;
+	height: 190px;
+	z-index: -1;
+}
+
+.left-arm {
+	background: radial-gradient(circle at 20% 70%, var(--kirby-body-arms-main), var(--kirby-body-arms-main), var(--kirby-body-arms-dark), var(--kirby-body-arms-dark));
+	transform-origin: top;
+	transform: rotate(100deg);
+	left: 60px;
+	top: 110px;
+}
+  
+  .right-arm {
+	background: radial-gradient(circle at 20% 45%, var(--kirby-body-arms-main), var(--kirby-body-arms-main), var(--kirby-body-arms-dark), var(--kirby-body-arms-dark));
+	transform-origin: bottom;
+	transform: rotate(80deg); 
+	left: 100px;
+	bottom: 280px;
+}
+
+.foot {
+	border-radius: 50%;
+	border: 2px solid black;
+	position: absolute;
+	width: 130px;
+	height: 190px;
+	top: 55%;
+	z-index: -1;
+
+}
+
+.left-foot {
+	background: radial-gradient(circle at 00% 45%, var(--kirby-feet-light), var(--kirby-feet-main), var(--kirby-feet-main), var(--kirby-feet-dark), var(--kirby-feet-dark));
+	left: -5%;
+	transform: rotate(70deg);
+  }
+  
+  .right-foot {
+	background: radial-gradient(circle at 60% 30%, var(--kirby-feet-light), var(--kirby-feet-main), var(--kirby-feet-main), var(--kirby-feet-dark), var(--kirby-feet-dark));
+	left: 60%;
+	transform: rotate(290deg);
+}
